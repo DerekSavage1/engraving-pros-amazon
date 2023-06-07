@@ -1,14 +1,20 @@
 <template>
   <div id="container">
-    <div id="logo">Engraving Pros</div>
-    <div class="navbar">
-      <div class="nav">hi</div>
-      <div class="nav">hello</div>
-      <div class="nav">hola</div>
+    <div id="logo">
+      <logo-selection
+        width="214px"
+        height="18px"
+        color="var(--secondary-100)"
+      />
     </div>
-    <div class="navbar">
-      <div class="nav">hello</div>
-      <div class="nav">hola</div>
+    <div class="navbar mobile-H6">
+      <div>Home</div>
+      <div>Pricing</div>
+      <div>Samples</div>
+    </div>
+    <div class="navbar mobile-H6">
+      <div>Fonts</div>
+      <div>About</div>
     </div>
     <div class="line-segment"></div>
     <div class="copyright">
@@ -27,40 +33,36 @@
   left: 0;
   width: 100%;
   height: auto;
-  background-color: grey;
-  border-top: 5pt solid yellow;
+  background-color: var(--secondary-200);
+  border-top: 5pt solid var(--primary-200);
   padding-left: 64px;
   padding-right: 64px;
   padding-top: 20px;
   padding-bottom: 20px;
   box-sizing: border-box;
   gap: 10px;
+  color: var(--secondary-100);
 }
 
 #logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
   height: 46px;
   width: auto;
 }
 
 .navbar {
-  background-color: antiquewhite;
   display: flex;
   flex-direction: row;
   gap: 48px;
   align-items: center;
   justify-content: center;
 }
-.nav {
-  background-color: aquamarine;
-}
 
 .line-segment {
   height: 3pt;
-  background-color: black;
+  background-color: var(--secondary-100);
   width: auto;
 }
 
@@ -71,3 +73,12 @@
   text-align: center;
 }
 </style>
+
+<script lang="ts">
+import LogoSelection from "@/assets/LogoSelection.vue";
+export default {
+  components: {
+    LogoSelection,
+  },
+};
+</script>
