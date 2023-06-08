@@ -29,7 +29,6 @@
 #container {
   display: flex;
   flex-direction: column;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;

@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <MobileNavigation class="fixed-top" />
-    <MobileFooter class="fixed-bot" />
+    <MobileCTA></MobileCTA>
+    <MobileFooter class="fixed-bot" color="var(--secondary-200)" />
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import { Options, Vue } from "vue-class-component";
 import MobileFooter from "./components/MobileFooter.vue";
 import MobileNavigation from "./components/MobileNavigation.vue";
+import MobileCTA from "./components/MobileCTA.vue";
 
 @Options({
   components: {
     MobileFooter,
     MobileNavigation,
+    MobileCTA,
   },
 })
 export default class App extends Vue {}
