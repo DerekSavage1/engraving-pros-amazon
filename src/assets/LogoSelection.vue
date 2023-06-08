@@ -16,12 +16,18 @@
 </template>
 
 <script lang="ts">
-export default {
-  props: ["width", "height", "color"],
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  props: {
+    width: String,
+    height: String,
+    color: String,
+  },
   computed: {
-    pathStyle() {
+    pathStyle(): string {
       return `fill: ${this.color};`;
     },
   },
-};
+});
 </script>
