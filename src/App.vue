@@ -25,7 +25,7 @@ export default class App extends Vue {}
 <style>
 body,
 html {
-  padding: 0;
+  padding-top: 48px;
   margin: 0;
 }
 #app {

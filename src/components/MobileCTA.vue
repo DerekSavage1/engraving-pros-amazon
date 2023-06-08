@@ -10,7 +10,10 @@
       </div>
       <div class="button mobile-H6">Call Us</div>
     </div>
-    <div class="picture-with-frame"><div class="rectangle"></div></div>
+    <div class="picture-with-frame">
+      <div class="rectangle"></div>
+      <div class="photo"></div>
+    </div>
   </div>
 </template>
 
@@ -55,22 +58,29 @@
 }
 
 .picture-with-frame {
-  width: auto;
-  height: 404px;
+  position: relative;
+  min-height: 300px;
+  width: stretch;
 }
 
 .rectangle {
-  height: 376px;
-  width: 303px;
-
-  left: 0%;
-  right: 11.59%;
-  top: 7.48%;
-  bottom: -0.56%;
-
-  /* Secondary/Secondary 200(Main) */
-
+  height: stretch;
+  left: 14px;
+  position: absolute;
+  top: 19px;
+  transform: rotate(-4.68deg);
+  width: stretch;
   background: var(--primary-200);
-  transform: matrix(1, -0.1, 0.11, 0.99, 0, 0);
+}
+
+.photo {
+  background-image: url(https://engravingpros.com/img/frame-1@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: stretch;
+  left: 14px;
+  position: absolute;
+  top: 22px;
+  width: stretch;
 }
 </style>

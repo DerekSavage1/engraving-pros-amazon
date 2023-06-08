@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 128px;
+  height: 124px;
   background-color: white;
   padding-left: 15px;
   padding-right: 15px;
