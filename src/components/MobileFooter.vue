@@ -5,6 +5,7 @@
         width="214px"
         height="18px"
         color="var(--secondary-100)"
+        condensed="false"
       />
     </div>
     <div class="navbar mobile-H6">
