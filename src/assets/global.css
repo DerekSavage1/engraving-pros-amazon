@@ -1,11 +1,19 @@
 @import "./variables";
 
+.text-center {
+  text-align: center;
+}
+
 .fixed-bot {
   margin-top: auto;
 }
 
 .fixed-top {
   margin-bottom: auto;
+}
+
+.neutral-250 {
+  color: #8c8c8c;
 }
 
 .primary-250 {
@@ -64,7 +72,7 @@
   border-left: 2px solid currentColor;
 }
 
-.web-display-large {
+.web-display-large-thin {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -75,6 +83,14 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
+}
+
+.web-display-large-bold {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
 }
 
 .web-display-small {
@@ -288,6 +304,19 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+}
+
+.mobile-H1-bold {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
   line-height: 44px;
   /* identical to box height, or 122% */

@@ -3,9 +3,10 @@
     <MobileNavigation class="fixed-top" />
     <div class="mobileContent">
       <MobileCTA></MobileCTA>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
+      <review-card></review-card>
+      <review-card></review-card>
+      <review-card></review-card>
+      <mobile-contact-us></mobile-contact-us>
     </div>
   </div>
   <MobileFooter class="fixed-bot" color="var(--secondary-200)" />
@@ -17,6 +18,7 @@ import MobileFooter from "./components/MobileFooter.vue";
 import MobileNavigation from "./components/MobileNavigation.vue";
 import MobileCTA from "./components/MobileCTA.vue";
 import ReviewCard from "./components/ReviewCard.vue";
+import MobileContactUs from "./components/MobileContactUs.vue";
 
 @Options({
   components: {
@@ -24,6 +26,7 @@ import ReviewCard from "./components/ReviewCard.vue";
     MobileNavigation,
     MobileCTA,
     ReviewCard,
+    MobileContactUs,
   },
 })
 export default class App extends Vue {}
