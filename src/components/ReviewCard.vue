@@ -14,7 +14,7 @@
       heirloom quality and well priced. Staff are friendly, courteous and
       extremely helpful...
     </div>
-    <div class="Date mobile-paragraph-small">May 2022</div>
+    <div class="Date mobile-paragraph-small neutral-250">May 2022</div>
   </div>
 </template>
 
