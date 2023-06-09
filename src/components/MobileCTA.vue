@@ -8,7 +8,7 @@
         Come to <br />
         the Pros
       </div>
-      <div class="button mobile-H6">Call Us</div>
+      <div class="button mobile-H6">Visit Us</div>
     </div>
     <div class="picture-with-frame">
       <div class="rectangle"></div>
@@ -25,9 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 16px;
   gap: 48px;
-
   width: auto;
   height: 760px;
 }

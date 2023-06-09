@@ -29,9 +29,7 @@
 #container {
   display: flex;
   flex-direction: column;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: stretch;
   height: auto;
   background-color: var(--secondary-200);
   border-top: 5pt solid var(--primary-200);
