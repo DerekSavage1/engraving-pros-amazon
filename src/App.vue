@@ -1,9 +1,14 @@
 <template>
   <div id="app">
     <MobileNavigation class="fixed-top" />
-    <MobileCTA></MobileCTA>
-    <MobileFooter class="fixed-bot" color="var(--secondary-200)" />
+    <div class="mobileContent">
+      <MobileCTA></MobileCTA>
+      <ReviewCard></ReviewCard>
+      <ReviewCard></ReviewCard>
+      <ReviewCard></ReviewCard>
+    </div>
   </div>
+  <MobileFooter class="fixed-bot" color="var(--secondary-200)" />
 </template>
 
 <script lang="ts">
@@ -11,12 +16,14 @@ import { Options, Vue } from "vue-class-component";
 import MobileFooter from "./components/MobileFooter.vue";
 import MobileNavigation from "./components/MobileNavigation.vue";
 import MobileCTA from "./components/MobileCTA.vue";
+import ReviewCard from "./components/ReviewCard.vue";
 
 @Options({
   components: {
     MobileFooter,
     MobileNavigation,
     MobileCTA,
+    ReviewCard,
   },
 })
 export default class App extends Vue {}
@@ -25,15 +32,23 @@ export default class App extends Vue {}
 <style>
 body,
 html {
+  padding: 0px;
   padding-top: 48px;
-  margin: 0;
+  margin: 0px;
 }
 #app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.mobileContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px 0px 16px;
+  gap: 48px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 </style>
