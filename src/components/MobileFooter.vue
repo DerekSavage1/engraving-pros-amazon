@@ -25,10 +25,11 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 #container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: stretch;
   height: auto;
   background-color: var(--secondary-200);
@@ -61,7 +62,8 @@
 .line-segment {
   height: 3pt;
   background-color: var(--secondary-100);
-  width: auto;
+  width: stretch;
+  max-width: 400px;
 }
 
 .copyright {

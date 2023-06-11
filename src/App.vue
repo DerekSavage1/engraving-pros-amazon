@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <MobileNavigation class="fixed-top" />
-    <div class="mobileContent">
+    <div class="content">
       <MobileCTA></MobileCTA>
-      <review-card></review-card>
-      <review-card></review-card>
-      <review-card></review-card>
+      <div class="review-cards">
+        <review-card class="card1"></review-card>
+        <review-card class="card2"></review-card>
+        <review-card class="card3"></review-card>
+      </div>
       <mobile-contact-us></mobile-contact-us>
     </div>
   </div>
@@ -32,7 +34,7 @@ import MobileContactUs from "./components/MobileContactUs.vue";
 export default class App extends Vue {}
 </script>
 
-<style>
+<style lang="scss">
 body,
 html {
   padding: 0px;
@@ -46,12 +48,52 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.mobileContent {
+/* phone */
+.content {
   display: flex;
   flex-direction: column;
-  padding: 0px 16px 0px 16px;
+  padding: 64px 16px 64px 16px;
   gap: 48px;
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.review-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* tablet small */
+@media (min-width: #{$tablet-small}) {
+  .content {
+    padding: 24px 32px 24px 32px;
+    gap: 32px;
+  }
+}
+
+/* tablet large */
+@media (min-width: #{$tablet-large}) {
+  .content {
+    padding: 24px 24px 24px 24px;
+    gap: 24px;
+  }
+  .review-cards {
+    flex-direction: row;
+  }
+}
+
+/* desktop */
+@media (min-width: #{$desktop}) {
+  .content {
+    padding: 0;
+    gap: 24px;
+    max-width: 1128px;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

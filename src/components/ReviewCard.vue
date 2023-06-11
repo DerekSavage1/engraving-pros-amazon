@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   display: flex;
   flex-direction: column;
@@ -27,6 +27,7 @@
   padding: 30px;
   gap: 10px;
   border-radius: 15px;
+  background-color: white;
 }
 
 .stars {

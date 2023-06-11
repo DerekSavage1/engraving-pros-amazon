@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .container {
   /* Auto layout */
 
@@ -26,11 +26,10 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
-  width: auto;
-  height: 760px;
 }
 
 .CTA {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,6 +58,7 @@
   position: relative;
   min-height: 300px;
   width: stretch;
+  max-width: 300px;
 }
 
 .rectangle {
@@ -80,5 +80,12 @@
   position: absolute;
   top: 22px;
   width: stretch;
+}
+
+@media (min-width: #{$tablet-small}) {
+  .container {
+    align-content: space-between;
+    flex-direction: row;
+  }
 }
 </style>
