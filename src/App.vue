@@ -4,9 +4,24 @@
     <div class="content">
       <MobileCTA></MobileCTA>
       <div class="review-cards">
-        <review-card class="card1"></review-card>
-        <review-card class="card2"></review-card>
-        <review-card class="card3"></review-card>
+        <review-card
+          class="review-card"
+          name="AZ Decaturga"
+          review="Engraving Pros provided an excellent engraving services with utmost accuracy!!! They have variety of beautiful gift items - presentable, heirloom quality and well priced. Staff are friendly, courteous and extremely helpful..."
+          date="May 2022"
+        ></review-card>
+        <review-card
+          class="review-card"
+          name="Debs D."
+          review="I just became the coolest babysitter ever by giving a boy a personalized pocket knife. I had to call around to find a place and the team at Engraving Pros was great over the phone and in person. They were quick and did a fantastic job..."
+          date="June 2022"
+        ></review-card>
+        <review-card
+          class="review-card"
+          name="Tim Mcavoy"
+          review="Same day service. Great customer service. Fair pricing for excellent work. Highly recommend."
+          date="October 2022"
+        ></review-card>
       </div>
       <mobile-contact-us></mobile-contact-us>
     </div>
@@ -58,10 +73,15 @@ html {
   margin-bottom: 32px;
 }
 
+.review-card {
+  flex: 1;
+}
+
 .review-cards {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  align-items: flex-start;
 }
 
 /* tablet small */
@@ -80,6 +100,8 @@ html {
   }
   .review-cards {
     flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
   }
 }
 

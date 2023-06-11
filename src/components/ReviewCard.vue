@@ -1,6 +1,6 @@
 <template>
   <div class="container M3-elevation-light">
-    <div class="name web-H6">AZ Decaturga</div>
+    <div class="name web-H6">{{ name }}</div>
     <div class="stars">
       <ReviewStar />
       <ReviewStar />
@@ -9,12 +9,9 @@
       <ReviewStar />
     </div>
     <div class="mobile-paragraph-large">
-      Engraving Pros provided an excellent engraving services with utmost
-      accuracy!!! They have variety of beautiful gift items - presentable,
-      heirloom quality and well priced. Staff are friendly, courteous and
-      extremely helpful...
+      {{ review }}
     </div>
-    <div class="Date mobile-paragraph-small neutral-250">May 2022</div>
+    <div class="Date mobile-paragraph-small neutral-250">{{ date }}</div>
   </div>
 </template>
 
@@ -45,6 +42,11 @@ export default {
   name: "ReviewCard",
   components: {
     ReviewStar,
+  },
+  props: {
+    name: String,
+    review: String,
+    date: String,
   },
 };
 </script>
